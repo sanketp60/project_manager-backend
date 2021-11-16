@@ -11,7 +11,7 @@ class Project(models.Model):
     ProjectName = models.CharField(max_length=100)
     ProjectDescription = models.TextField()
     ProjectDuration = models.CharField(max_length=5)
-    ProjectAvatar = models.ImageField(upload_to='project_manager_app', storage=gd_storage)
+    ProjectAvatar = models.ImageField(upload_to='project_manager_app', storage=gd_storage, blank=True)
 
     def __str__(self):
         return f'{self.ProjectName} ({self.ProjectID})'
@@ -22,7 +22,7 @@ class Task(models.Model):
     TaskDescription = models.TextField()
     TaskStartDate = models.DateField(default=timezone.now)
     TaskEndDate = models.DateField(default=timezone.now)
-    Project = models.ForeignKey(Project, on_delete=models.CASCADE)
+    Project = models.ForeignKey(Project, related_name='tasks', on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.TaskName
+        return f'{self.TaskName} ({self.TaskID})'
