@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "phi-c-milestone-repo",
+  "private_key_id": "2581fd476ce72ef3ceeed4d84c3b47faf81f0349",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQD8WP170E7Ii9/R\nqpeYPzYG8LfXjiSlxFWzH9uhSU1AfHpT9OFrxAuRQl3zWJ/6iZq/++sCak08cuHS\nMx/GDNNiF5rDkg2scEf1eBfvsqzjdT4yoz0xyXYyJnoobx1+D6yVDfdC3i3a1Kfu\nPrG/9h2ETF4vqqJnEI7SFsgyN9Tl654YXev4vgs7gE96PecGtt9FvKsbNTDWCTwF\n/Zyu1kcLJDU8SPm78Lq/ZPBjG9xxCF6L3dvGZjJwC0vI7zD2itcgsx2L/jrnVKj+\neXEAZ4YWkX+f0asiVhNkMgIxuw+aR59Po/mf683RWvKHt2BaXQnn4C5Zi0Fuo+6D\nnEWe8N1fAgMBAAECggEABX0CZQNp2AoqfbjdNR/HW6s3voSqeoPReos5VgHY0z7s\nfk/UcYtYgO0tKTEeOVnDAktTxyJNmnfupKt7P2VL8vvpk1rc4VYQOg8Bb5nuIloM\nZ6AjMkiTdMDF0KZQsEKzNej3v+jLFNoqcthLOh83X/69m/CGF4H0ppR9qqK9W/FK\nYbqMJh9SQrEZw8YuKQVpkGDTzhrd6Yn7ct2o18I0bLtBbQ/tBBjq165kB9PM1s8t\nvq4Tk8x2bKi2VoWV/n2O32NElhzKGhRU24LNJckGu61ceJlJpDC8L2Ng/sLxhgvZ\nC6aiSSuMauvGwjI2/y7RRIIpHGPftboP3VHw/gvgKQKBgQD/+tY7TPNELxq6TUAE\nhEBYv6/Bl5V5kXkYT2s0S3P1qfgaVRP4iEsDgyEeFvNipubrewojps3Wdgjs+7XU\n1caVJL+vBP25rx1tKM4/tbTYPQxd9X+uakpUGoqJKWAjviHyFPS78Wmx+fj73zh7\nuvUyzT6ey9aemjFr23AlMFGrCQKBgQD8XhR/MJ0hrHdE+cFBtHOPCFLvtGQgZPPS\nQrbuc9ngZZgT+Sh0USsFmK6/urK77fz5cKjIqc91Ebjjqm/J5kjXXRjJreoOzNfY\nko1yHm43l69Df2of5SX92efekR8wJZYAdqPB+fihg2bDOAbxiuLszrCetwLSvF+k\nQ4u4mZIXJwKBgQDHpDF7VHuSHQ7CaEdafm7VCMMhwICCrNN+A0rAIWzSF3r5xorp\n1hpzJc0pc4rk0PjehTqWLZzx+2LguTvKP+Q+I8gfz0u3ivzvStj41VWzJIHFshef\nxyQrTfvoF830cnB1JqTtA86EUUo/3otl7J0Zvvtsy9uaHPYYga+IQZQgSQKBgQCS\nyYn0fOs4Vd89oGN2+yWn0TikMfF3IiDrcGCEi5/ztEPjgi20ki2K4MbrwAUL6B4X\nXB7gMFz5g+hdi5nf/nDpyz2KuPyFxUHat0tMUETdUv3fLbIlgRw67c6/Fvvj/kik\nVl1jiyjBkPNpoyHuxlC9Wm9CscITnvumSJ9xLOnbSwKBgQDWwDxU9na/VjNpMCfY\nO5efo6D9MM8wi0Wz+6BWZIc0CQj3OZM1CUUByI0lAw7UIdypt0HmFEuEOuh3qPRY\nIgB5znxV066yI5tRfKTChj7990mknqSVPH8IdivfylwUrBUExW2JTpqWljFXRgiK\nGdQSgvQTlVTAlv/KpkqDm0y4WQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "phi-c-milestone-repo@phi-c-milestone-repo.iam.gserviceaccount.com",
+  "client_id": "117210022960498378956",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/phi-c-milestone-repo%40phi-c-milestone-repo.iam.gserviceaccount.com"
+}
