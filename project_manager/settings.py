@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import environ
 
+import django_heroku
+
 # Initialise environment variables
  
 env = environ.Env()
@@ -153,3 +155,8 @@ CORS_ALLOWED_ORIGINS = [
 "http://127.0.0.1:5500",
 "https://project-manager-sanketp60.tiiny.site"
 ]
+
+# Activate Django-Heroku
+
+django_heroku.settings(locals())
+
