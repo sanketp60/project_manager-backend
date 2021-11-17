@@ -71,6 +71,8 @@ class TaskList(APIView):
     def post(self, request, pk, format=None):
         request.data["Project"]=pk
         serializer = TaskSerializer(data=request.data)
+        if Task.objects.all().filter(TaskName=request.data["TaskName"],Project=pk):
+            return Response("A task with already this name is present in this project", status=status.HTTP_400_BAD_REQUEST)
         if datechecker(request.data["TaskStartDate"],request.data["TaskEndDate"])==False:
             return Response("Start Date should come before or on the end date", status=status.HTTP_400_BAD_REQUEST)
 
