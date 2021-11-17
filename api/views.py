@@ -71,7 +71,6 @@ class TaskList(APIView):
     def post(self, request, pk, format=None):
         request.data["Project"]=pk
         serializer = TaskSerializer(data=request.data)
-        print(request.data)
         if datechecker(request.data["TaskStartDate"],request.data["TaskEndDate"])==False:
             return Response("Start Date should come before or on the end date", status=status.HTTP_400_BAD_REQUEST)
 
