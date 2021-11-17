@@ -6,6 +6,23 @@ from django.http import Http404
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from datetime import date
+
+def datechecker(startdate, enddate):
+    sdate = date(
+        int(startdate.split("-")[0]),
+        int(startdate.split("-")[1]),
+        int(startdate.split("-")[2])
+        )
+    edate = date(
+        int(enddate.split("-")[0]),
+        int(enddate.split("-")[1]),
+        int(enddate.split("-")[2])
+        )
+    if sdate>edate:
+        return False
+    else:
+        return True
 
 class ProjectList(APIView):
     def get(self, request, format=None):
@@ -54,6 +71,10 @@ class TaskList(APIView):
     def post(self, request, pk, format=None):
         request.data["Project"]=pk
         serializer = TaskSerializer(data=request.data)
+        print(request.data)
+        if datechecker(request.data["TaskStartDate"],request.data["TaskEndDate"])==False:
+            return Response("Start Date should come before or on the end date", status=status.HTTP_400_BAD_REQUEST)
+
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -73,6 +94,8 @@ class TaskDetail(APIView):
 
     def put(self, request, pk, format=None):
         task = self.get_object(pk)
+        if datechecker(request.data["TaskStartDate"],request.data["TaskEndDate"])==False:
+            return Response("Start Date should come before or on the end date", status=status.HTTP_400_BAD_REQUEST)
         serializer = TaskSerializer(task, data=request.data, partial=True)
         if serializer.is_valid():
             serializer.save()
