@@ -153,7 +153,8 @@ GOOGLE_DRIVE_STORAGE_JSON_KEY_FILE = 'gdstorage_key.json'
 
 CORS_ALLOWED_ORIGINS = [
 "http://127.0.0.1:5500",
-"https://project-manager-sanketp60.tiiny.site"
+"https://project-manager-sanketp60.tiiny.site",
+"https://project-management-sanketp60.netlify.apps"
 ]
 
 # Activate Django-Heroku
